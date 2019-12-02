@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Design sources = https://codepen.io/martingrand/pen/WxPZVY -->
+<head>
+    <meta charset="UTF-8">
+    <title>404</title>
+    <style>
+
+        .canvas {
+            display:inline-block;
+            position:absolute;
+            line-height:0;
+            left:50%;
+            top:50%;
+            transform:translate3d(-50%, -50%, 0);
+            background:#eeeeee;
+            box-shadow:0 40px 40px -40px rgba(0,0,0,.25);
+            cursor:pointer;
+            border-radius:20px;
+            transition:background .2s ease;
+        }
+
+        canvas {
+            border-radius:20px;
+        }
+
+        .canvas:hover { background:transparent; }
+
+    </style>
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet" type="text/css" />
+<a class="canvas">
+    <canvas id="cnvs"></canvas>
+</a>
+</body>
+
+<script>
+
+    function Captcha(txt){
+        var canvas = document.getElementById('cnvs'),
+            ctx = canvas.getContext('2d'),
+            unite = 50,
+            width = unite * 10,
+            height = unite * 4.5,
+            rotates = [Math.random() -0.5,Math.random() -0.5,Math.random() -0.5,Math.random() -0.5,Math.random() -0.5,Math.random() -0.5,Math.random() -0.5];
+
+        function __Constructor(){
+            canvas.height = height;
+            canvas.width = width;
+            drawFrame();
+        }
+
+        function drawFrame(){
+            var i = 0;
+            canvas.height=height;
+            while(++i < 6) {
+                drawPhase();
+            }
+            drawPhase('#454545');
+            setTimeout(drawFrame, 80);
+        }
+
+        function drawPhase(fill){
+            ctx.fillStyle = fill || (Math.random() > 0.5 ? '#0cf0cf' : '#454545');
+            ctx.textAlign = 'center';
+            drawWord(txt);
+            drawNoise(5);
+            //requestAnimationFrame(drawPhase);
+        }
+
+        function drawWord(word){
+            putText(unite* 2, unite* 2, word.charAt(0), unite* 2, 0.01);
+            putText(unite* 3, unite* 2, word.charAt(1), unite* 2, 0.01);
+            putText(unite* 4, unite* 2, word.charAt(2), unite* 2, 0.01);
+            putText(unite* 5, unite* 2, word.charAt(3), unite* 2, 0.01);
+            putText(unite* 6, unite* 2, word.charAt(4), unite* 2, 0.01);
+            putText(unite* 7, unite* 2, word.charAt(5), unite* 2, 0.01);
+            putText(unite* 8, unite* 2, word.charAt(6), unite* 2, 0.01);
+        }
+
+        function drawNoise(noise){
+            var i,
+                char;
+            for(i = 0; i < noise; i++) {
+                char = Math.random() > 0.5 ? '+' : Math.random().toString(32)[3];
+                putText(Math.random() * width, Math.random() * height, char, unite* 2 * Math.random());
+            }
+        }
+
+        function putText(x, y, text, size, rotate) {
+            if(rotate) {
+                rotate += (Math.random() * 0.5) - 0.25
+            }
+            ctx.font = (Math.random() > 0.5 ? 'bold ' : '') + size + 'px \'Cutive Mono\'';
+            ctx.save();
+            ctx.translate(x + (Math.random() * 5) - 2.5, y + (Math.random() * 5) - 2.5);
+            ctx.rotate(rotate || Math.random() -0.5);
+            ctx.fillText(text, 0, (size * 0.75) / 2);
+            ctx.restore();
+        }
+
+        __Constructor();
+
+    }
+
+    Captcha('  404');
+
+
+</script>
+</html>

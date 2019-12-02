@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{TweenMax, aes, anime, api, bootstrap, flowplayer, flowplayer.hlsjs, flowplayer.vod-quality-selector, html2canvas, jquery, jquery.easing, jquery.form, modernizr, nouislider, plyr, react-dom, react-with-addons-0.14.7, require, stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd}" />
+    <includedPredefinedLibrary name="Node.js Core" />
+  </component>
+</project>

@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <script>
+        var connection = new WebSocket('ws://192.168.1.30:81');
+        connection.onopen = function() {
+            connection.send('BROWSER');
+        };
+        connection.onerror = function(error) {
+            console.log('WebSocket Error ', error);
+        };
+        connection.onmessage = function(e) {
+            console.log(e.data);
+			var blob = e.data;
+			var urlCreator = window.URL || window.webkitURL;
+            var imageUrl = urlCreator.createObjectURL(blob);
+            document.querySelector('#photo').src = imageUrl;
+			
+			if(document.getElementById("switch").checked) connection.send('Req');
+        };
+
+        function send() {
+            start = Date.now();
+            connection.send('Req');
+        }
+		
+
+
+    </script>
+</head>
+
+<body>Control:
+    <br/>
+    <button onclick="send()">Click me</button> <img id="photo" src=""> 
+		
+		
+	<label class="switch">
+	<input id="switch" type="checkbox">
+	<span class="slider round"></span>
+	</label>
+</body>
+
+</html>
