@@ -18,5 +18,5 @@ Start the application
 ```bash
 npm start
 ```
-
-## Node.js setup
+Open [http://localhost:3000](http://localhost:3000).
+## ESP32 setup
