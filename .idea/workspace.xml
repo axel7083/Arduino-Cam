@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="646b3e70-fe39-4d7c-9d33-0af471a177d6" name="Default Changelist" comment="" />
+    <list default="true" id="646b3e70-fe39-4d7c-9d33-0af471a177d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/websocket-ESP32.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/websocket-ESP32.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,11 +20,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+            <state relative-caret-position="1241">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/websocket-ESP32.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="95" selection-start-line="4" selection-start-column="95" selection-end-line="4" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="357">
+                <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="16" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -88,8 +113,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/movie_test.html" />
-        <option value="$PROJECT_DIR$/public/js/homepage.js" />
         <option value="$PROJECT_DIR$/public/SKRN_files/circle-progress.min.js.téléchargement" />
         <option value="$PROJECT_DIR$/public/row_card.html" />
         <option value="$PROJECT_DIR$/public/js/categorie_selector.js" />
@@ -139,6 +162,15 @@
         <option value="$PROJECT_DIR$/json_data/users.json" />
         <option value="$PROJECT_DIR$/routes/users.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/public/websocket-ESP32.html" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
       </list>
     </option>
   </component>
@@ -153,12 +185,38 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Arduino-Cam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Arduino-Cam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Arduino-Cam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Arduino-Cam" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Arduino-Cam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Arduino-Cam" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Arduino-Cam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Arduino-Cam" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -301,12 +359,14 @@
       <workItem from="1575121047874" duration="4086000" />
       <workItem from="1575233402141" duration="2140000" />
       <workItem from="1575324016417" duration="600000" />
-      <workItem from="1575324757100" duration="589000" />
+      <workItem from="1575324757100" duration="1080000" />
+      <workItem from="1575326029144" duration="188000" />
+      <workItem from="1575326260658" duration="255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="482065000" />
+    <option name="totallyTimeSpent" value="482999000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,6 +379,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.1085353" />
       <window_info id="Structure" order="1" sideWeight="0.50080776" side_tool="true" weight="0.17913593" />
@@ -347,18 +408,11 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/index_2.html" />
-    <entry file="file://$PROJECT_DIR$/public/welcome.html" />
-    <entry file="file://$PROJECT_DIR$/public/random.html" />
-    <entry file="file://$PROJECT_DIR$/public/js/home_functions.js" />
     <entry file="file://$PROJECT_DIR$/public/js/movie_page.js" />
     <entry file="file://$PROJECT_DIR$/public/js/pages_loader.js" />
     <entry file="file://$PROJECT_DIR$/public/js/random.js" />
     <entry file="file://$PROJECT_DIR$/public/movie_files/style.css" />
     <entry file="file://$PROJECT_DIR$/public/movie.html" />
-    <entry file="file://$PROJECT_DIR$/views/index.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/myDataBase.json" />
     <entry file="file://$PROJECT_DIR$/public/js/header.js" />
     <entry file="file://$PROJECT_DIR$/public/SKRN_files/style.css" />
@@ -429,11 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -450,10 +499,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/json_data/users.json" />
+    <entry file="file://$PROJECT_DIR$/views/error.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/file.txt" />
+    <entry file="file://$PROJECT_DIR$/public/404.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+        <state relative-caret-position="1241">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/websocket-ESP32.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="95" selection-start-line="4" selection-start-column="95" selection-end-line="4" selection-end-column="95" />
         </state>
       </provider>
     </entry>
@@ -461,6 +527,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="357">
+            <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
