@@ -5,6 +5,7 @@
 * Node.js v12.8.1
 * Git
 * Visual Studio Code (PlatformIO installed)
+* ESP82 connected to OV5642
 
 ## Node.js setup
 
