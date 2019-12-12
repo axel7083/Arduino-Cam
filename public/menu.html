@@ -523,6 +523,7 @@
     </style>
 </head>
 <body>
+
 <div class="container">
     <h2 class="title">ArduCAM</h2>
     <div class="result">
@@ -530,7 +531,10 @@
         <div class="result__info right">click to copy</div>
         <div class="result__info left">copied</div>
         <div class="result__viewbox" id="result">CLICK TO STREAM</div>
-        <button id="copy-btn" style="--x: 0; --y: 0"><i class="far fa-copy"></i></button>
+        <button id="copy-btn" style="--x: 0; --y: 0"><i class="fas fa-video" style="
+    top: 12px;
+    position: relative;
+"></i></i></button>
     </div>
     <div class="length range__slider" data-min="0" data-max="180">
         <div class="length__title field-title" data-length="90" style="
@@ -568,10 +572,11 @@
 </div>
 
 <div class="cd-popup" role="alert">
-    <div class="cd-popup-container">
-        <img class="fit-picture"
-             src="https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg"
-             alt="Grapefruit slice atop a pile of other slices">
+    <div class="cd-popup-container" style="width: auto;height: auto;">
+        <img id="stream" class="fit-picture" src="https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg" alt="Grapefruit slice atop a pile of other slices" style="
+    /* width: 200px; */
+    /* height: auto; */
+">
 
         <a href="#0" class="cd-popup-close img-replace">Close</a>
     </div> <!-- cd-popup-container -->
@@ -582,16 +587,34 @@
 
 <script>
 
-    // This is a simple Password Generator App that will generate random password maybe you can you them to secure your account.
-    // I tried my best to make the code as simple as possible please dont mind the variable names.
-    // Also this idea came in my mind after checking Traversy Media's latest video.
+    /**Javascript for websocket and videostream**/
+    var loop = false;
+    var connection = new WebSocket('ws://localhost:81'); //Hardcoded ip of the localhost
+    connection.onopen = function() {
+        connection.send('BROWSER');
+    };
+    connection.onerror = function(error) {
+        console.log('WebSocket Error ', error);
+    };
+    connection.onmessage = function(e) {
+        console.log(e.data);
+        var blob = e.data;
+        var urlCreator = window.URL || window.webkitURL;
+        var imageUrl = urlCreator.createObjectURL(blob);
+        document.querySelector('#stream').src = imageUrl;
 
-    // Clear the concole on every refresh
-    console.clear();
+        if(loop) connection.send('Req');
+    };
 
-    // Range Slider Properties.
-    // Fill : The trailing color that you see when you drag the slider.
-    // background : Default Range Slider Background
+    function send() {
+        start = Date.now();
+        connection.send('Req');
+    }
+
+
+
+
+    /** Javascript for design element**/
     const sliderProps = {
         fill: "#0B1EDF",
         background: "rgba(255, 255, 255, 0.214)",
@@ -618,37 +641,6 @@
         slider.style.background = bg;
         sliderValue.setAttribute("data-length", slider.value);
     }
-
-    // Object of all the function names that we will use to create random letters of password
-    const randomFunc = {
-        lower: getRandomLower,
-        upper: getRandomUpper,
-        number: getRandomNumber,
-        symbol: getRandomSymbol,
-    };
-
-    // Random more secure value
-    function secureMathRandom() {
-        return window.crypto.getRandomValues(new Uint32Array(1))[0] / (Math.pow(2, 32) - 1);
-    }
-
-    // Generator Functions
-    // All the functions that are responsible to return a random value taht we will use to create password.
-    function getRandomLower() {
-        return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-    }
-    function getRandomUpper() {
-        return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-    }
-    function getRandomNumber() {
-        return String.fromCharCode(Math.floor(secureMathRandom() * 10) + 48);
-    }
-    function getRandomSymbol() {
-        const symbols = '~!@#$%^&*()_+{}":?><;.,';
-        return symbols[Math.floor(Math.random() * symbols.length)];
-    }
-
-    // Selecting all the DOM Elements that are necessary -->
 
     // The Viewbox where the result will be shown
     const resultEl = document.getElementById("result");
@@ -692,55 +684,34 @@
 
     // Copy Password in clipboard
     copyBtn.addEventListener("click", () => {
-        //TODO: create popup
+
+        send();
+
         event.preventDefault();
         $('.cd-popup').addClass('is-visible');
+        loop = true;
 
         //close popup
         $('.cd-popup').on('click', function(event){
             if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
                 event.preventDefault();
                 $(this).removeClass('is-visible');
+                loop = false;
             }
         });
         //close popup when clicking the esc keyboard button
         $(document).keyup(function(event){
             if(event.which=='27'){
                 $('.cd-popup').removeClass('is-visible');
+                loop = false;
             }
         });
     });
 
     // When Generate is clicked Password id generated.
     generateBtn.addEventListener("click", () => {
-        const length = +lengthEl.value;
-        const hasLower = lowercaseEl.checked;
-        const hasUpper = uppercaseEl.checked;
-        const hasNumber = numberEl.checked;
-        const hasSymbol = symbolEl.checked;
-        resultEl.innerText = generatePassword(length, hasLower, hasUpper, hasNumber, hasSymbol);
-        copyInfo.style.transform = "translateY(0%)";
-        copyInfo.style.opacity = "0.75";
-        copiedInfo.style.transform = "translateY(200%)";
-        copiedInfo.style.opacity = "0";
+        alert("CLICKED");
     });
-
-    // Function responsible to generate password and then returning it.
-    function generatePassword(length, lower, upper, number, symbol) {
-        let generatedPassword = "";
-        const typesCount = lower + upper + number + symbol;
-        const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0]);
-        if (typesCount === 0) {
-            return "";
-        }
-        for (let i = 0; i < length; i++) {
-            typesArr.forEach(type => {
-                const funcName = Object.keys(type)[0];
-                generatedPassword += randomFunc[funcName]();
-            });
-        }
-        return generatedPassword.slice(0, length);
-    }
 
 
 </script>
