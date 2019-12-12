@@ -26,6 +26,8 @@
 WebSocketsClient webSocket;
 
 #define USE_SERIAL Serial
+#define GPIO_PWDN_MASK			0x02  //0 = Sensor normal operation, 	1 = Sensor 
+
 // set GPIO17 as the slave select :
 const int CS = 15;
 bool connected = false;
@@ -45,6 +47,7 @@ bool is_header = false;
 
 void start_capture()
 {
+    myCAM.clear_bit(ARDUCHIP_GPIO,GPIO_PWDN_MASK); //disable low power
     myCAM.clear_fifo_flag();
     myCAM.start_capture();
 }
@@ -155,6 +158,7 @@ void webSocketEvent(WStype_t type, uint8_t * payload, size_t length) {
 			USE_SERIAL.printf("[WSc] get text: %s\n", payload);
 
 			serverCapture();
+            
 
 			break;
 		case WStype_BIN:
@@ -221,6 +225,7 @@ void setup()
 
     myCAM.clear_fifo_flag();
 
+
         // Connect to WiFi network
         Serial.println();
         Serial.println();
@@ -249,6 +254,10 @@ void setup()
 	// try ever 5000 again if connection has failed
 	webSocket.setReconnectInterval(5000);
     
+    myCAM.set_bit(ARDUCHIP_GPIO,GPIO_PWDN_MASK); //enable low power
+//myCAM.set_bit(ARDUCHIP_GPIO,GPIO_PWDN_MASK); //enable low power
+//delay(300000); //5minutes
+//myCAM.clear_bit(ARDUCHIP_GPIO,GPIO_PWDN_MASK); //disable low power
 }
 
 
