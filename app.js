@@ -14,7 +14,7 @@ express.static('public');
 
 const location_hide = require('location-hide');
 path = require('path'),
-   // filePath = path.join(__dirname, 'public/html/index.html'); // <-- FILE IMPORT HERE
+   // filePath = path.join(__dirname, 'public/html/menu.html'); // <-- FILE IMPORT HERE
 fs = require('fs');
 randomize = require('randomatic');
 

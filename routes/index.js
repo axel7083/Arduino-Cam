@@ -64,6 +64,12 @@ router.get('/',function(req,res){
 
 });
 
+router.get('/index',function(req,res){
+
+  res.sendFile(path.join(__dirname+'/../public/menu.html'));
+
+});
+
 router.get('/test',function(req,res){
   console.log(req.body);
   res.sendStatus(200);

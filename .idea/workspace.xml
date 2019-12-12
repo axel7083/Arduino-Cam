@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="646b3e70-fe39-4d7c-9d33-0af471a177d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="646b3e70-fe39-4d7c-9d33-0af471a177d6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,49 +14,6 @@
   <component name="FavoritesManager">
     <favorites_list name="untitled" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/websocket-ESP32.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="442">
-                <caret line="26" column="140" selection-start-line="26" selection-start-column="140" selection-end-line="26" selection-end-column="140" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/utils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -69,102 +23,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>col-main</find>
-      <find>header-user-profile</find>
-      <find>search-icon-more</find>
-      <find>#search</find>
-      <find>mobile-menu-pro</find>
-      <find>video-logo-background</find>
-      <find>Logo</find>
-      <find>#video-search</find>
-      <find>header#masthead</find>
-      <find>Le C</find>
-      <find>\u0027</find>
-      <find>73223</find>
-      <find>78471</find>
-      <find>Piano</find>
-      <find>80795</find>
-      <find>Made in</find>
-      <find>Magicia</find>
-      <find>64432</find>
-      <find>Game of</find>
-      <find>localh</find>
-      <find>local</find>
-      <find>12 homm</find>
-      <find>389</find>
-      <find>389&quot;</find>
-      <find>445</find>
-      <find>445&quot;</find>
-      <find>&quot;445&quot;</find>
-      <find>333357</find>
-      <find>1399</find>
-      <find>Game</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/public/SKRN_files/circle-progress.min.js.téléchargement" />
-        <option value="$PROJECT_DIR$/public/row_card.html" />
-        <option value="$PROJECT_DIR$/public/js/categorie_selector.js" />
-        <option value="$PROJECT_DIR$/public/webfonts/test.html" />
-        <option value="$PROJECT_DIR$/public/header.html" />
-        <option value="$PROJECT_DIR$/public/js/home_fonctions.js" />
-        <option value="$PROJECT_DIR$/public/movie_files/script-dashboard.js.téléchargement" />
-        <option value="$PROJECT_DIR$/public/popup.html" />
-        <option value="$PROJECT_DIR$/public/js/main.js" />
-        <option value="$PROJECT_DIR$/public/cors.html" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/404.html" />
-        <option value="$PROJECT_DIR$/public/captcha.html" />
-        <option value="$PROJECT_DIR$/public/indextest.html" />
-        <option value="$PROJECT_DIR$/public/upload_files/script.js" />
-        <option value="$PROJECT_DIR$/public/upload.html" />
-        <option value="$PROJECT_DIR$/public/js/menu_show.js" />
-        <option value="$PROJECT_DIR$/public/js/movie_page.js" />
-        <option value="$PROJECT_DIR$/public/test.html" />
-        <option value="$PROJECT_DIR$/public/js/pages_loader.js" />
-        <option value="$PROJECT_DIR$/public/movie_files/style.css" />
-        <option value="$PROJECT_DIR$/public/movie.html" />
-        <option value="$PROJECT_DIR$/public/index_2.html" />
-        <option value="$PROJECT_DIR$/public/js/home_functions.js" />
-        <option value="$PROJECT_DIR$/public/welcome.html" />
-        <option value="$PROJECT_DIR$/public/random.html" />
-        <option value="$PROJECT_DIR$/public/js/header.js" />
-        <option value="$PROJECT_DIR$/public/SKRN_files/style.css" />
-        <option value="$PROJECT_DIR$/public/index_.html" />
-        <option value="$PROJECT_DIR$/public/Home_files/style.css" />
-        <option value="$PROJECT_DIR$/public/Home.html" />
-        <option value="$PROJECT_DIR$/routes/search.js" />
-        <option value="$PROJECT_DIR$/routes/basicfile.js" />
-        <option value="$PROJECT_DIR$/basic_data/important/anime_private.json" />
-        <option value="$PROJECT_DIR$/basic_data/important/tv_private.json" />
-        <option value="&lt;cd67a20d-b8a4-4689-8458-8563ba431efd&gt;/app.js" />
-        <option value="$PROJECT_DIR$/json_data/sessions.json" />
-        <option value="&lt;cd67a20d-b8a4-4689-8458-8563ba431efd&gt;/basic_data/important/tv_private.json" />
-        <option value="&lt;cd67a20d-b8a4-4689-8458-8563ba431efd&gt;/public/dmca.html" />
-        <option value="&lt;cd67a20d-b8a4-4689-8458-8563ba431efd&gt;/routes/index.js" />
-        <option value="&lt;cd67a20d-b8a4-4689-8458-8563ba431efd&gt;/public/mobile.html" />
-        <option value="&lt;cd67a20d-b8a4-4689-8458-8563ba431efd&gt;/public/sample.html" />
-        <option value="&lt;cd67a20d-b8a4-4689-8458-8563ba431efd&gt;/json_data/sessions.json" />
-        <option value="&lt;cd67a20d-b8a4-4689-8458-8563ba431efd&gt;/json_data/reports.json" />
-        <option value="$PROJECT_DIR$/bin/www" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/json_data/users.json" />
-        <option value="$PROJECT_DIR$/routes/users.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/public/websocket-ESP32.html" />
-        <option value="$PROJECT_DIR$/README.md" />
-      </list>
-    </option>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -174,10 +34,11 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectId" id="1Ua3TQTSjHYBvz9CEWLNvIymjVa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -188,23 +49,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="Arduino-Cam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arduino-Cam" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arduino-Cam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arduino-Cam" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arduino-Cam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arduino-Cam" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arduino-Cam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arduino-Cam" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Arduino-Cam-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Arduino-Cam-master" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -212,6 +58,11 @@
       </pane>
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -224,7 +75,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.8.1" />
     <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -236,19 +87,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\WebstormProjects\ShareIt\routes" />
-      <recent name="E:\WebstormProjects\ShareIt" />
-      <recent name="E:\WebstormProjects\gos\routes" />
-      <recent name="C:\Users\axels\WebstormProjects\untitled\public" />
-      <recent name="C:\Users\axels\WebstormProjects\untitled\json_data" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\axels\WebstormProjects\untitled\basic_data" />
       <recent name="C:\Users\axels\WebstormProjects\untitled\public\html" />
       <recent name="C:\Users\axels\WebstormProjects\untitled\private\html" />
       <recent name="C:\Users\axels\WebstormProjects\untitled\public" />
       <recent name="C:\Users\axels\WebstormProjects\untitled" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\axels\OneDrive - Universite De Technologie De Belfort-Montbeliard\Work\UVs\IFD2\Arduino-Cam-master\public" />
+      <recent name="E:\WebstormProjects\ShareIt\routes" />
+      <recent name="E:\WebstormProjects\ShareIt" />
+      <recent name="E:\WebstormProjects\gos\routes" />
+      <recent name="C:\Users\axels\WebstormProjects\untitled\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -260,6 +111,18 @@
         <RuleState>
           <option name="name" value="StatusDashboardGroupingRule" />
         </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -361,6 +224,16 @@
       <workItem from="1575324757100" duration="1080000" />
       <workItem from="1575326029144" duration="188000" />
       <workItem from="1575326260658" duration="1428000" />
+      <workItem from="1575580892027" duration="541000" />
+      <workItem from="1575582305405" duration="635000" />
+      <workItem from="1575615734194" duration="605000" />
+      <workItem from="1575617806101" duration="5000" />
+      <workItem from="1575893129677" duration="2095000" />
+      <workItem from="1575896066250" duration="4019000" />
+      <workItem from="1575982978663" duration="10000" />
+      <workItem from="1576162605769" duration="3311000" />
+      <workItem from="1576168268193" duration="802000" />
+      <workItem from="1576176094305" duration="985000" />
     </task>
     <task id="LOCAL-00001" summary="HTML fix">
       <created>1575326606414</created>
@@ -373,7 +246,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="484172000" />
+    <option name="totallyTimeSpent" value="985000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -386,26 +259,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.1085353" />
-      <window_info id="Structure" order="1" sideWeight="0.50080776" side_tool="true" weight="0.17913593" />
-      <window_info id="npm" order="2" sideWeight="0.50080776" side_tool="true" weight="0.17913593" />
-      <window_info id="Favorites" order="3" sideWeight="0.5005417" side_tool="true" weight="0.17913593" />
-      <window_info id="Remote Host" order="4" weight="0.14383562" />
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49420443" visible="true" weight="0.27555555" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.3997833" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5057956" side_tool="true" weight="0.27333334" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49578503" weight="0.3288889" />
-      <window_info anchor="bottom" id="File Transfer" order="11" />
-      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Remote Host" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -418,138 +288,70 @@
     <MESSAGE value="HTML fix" />
     <option name="LAST_COMMIT_MESSAGE" value="HTML fix" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/movie_page.js" />
-    <entry file="file://$PROJECT_DIR$/public/js/pages_loader.js" />
-    <entry file="file://$PROJECT_DIR$/public/js/random.js" />
-    <entry file="file://$PROJECT_DIR$/public/movie_files/style.css" />
-    <entry file="file://$PROJECT_DIR$/public/movie.html" />
-    <entry file="file://$PROJECT_DIR$/myDataBase.json" />
-    <entry file="file://$PROJECT_DIR$/public/js/header.js" />
-    <entry file="file://$PROJECT_DIR$/public/SKRN_files/style.css" />
-    <entry file="file://$PROJECT_DIR$/public/images/demo/dashboard-movie-poster.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/images/demo/dashboard-slide-3.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/images/demo/dashboard-slide-4.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/images/dashboard-slide-0.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/index_.html" />
-    <entry file="file://$PROJECT_DIR$/basic_data/important/movies_private.json" />
-    <entry file="file://$PROJECT_DIR$/routes/search.js" />
-    <entry file="file://$PROJECT_DIR$/basic_data/important/anime_private.json" />
-    <entry file="file://$PROJECT_DIR$/basic_data/important/anime_public.json" />
-    <entry file="file://$PROJECT_DIR$/basic_data/important/movies_public.json" />
-    <entry file="file://$PROJECT_DIR$/public/Home.html" />
-    <entry file="file://$PROJECT_DIR$/public/Home_files/style.css" />
-    <entry file="file://$PROJECT_DIR$/routes/basicfile.js" />
-    <entry file="file://$PROJECT_DIR$/.openode">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic_data/important/tv_private.json" />
-    <entry file="file://$PROJECT_DIR$/basic_data/important/tv_public.json" />
-    <entry file="file://$USER_HOME$/Desktop/sample_files/raw.png" />
-    <entry file="file://$PROJECT_DIR$/node_modules/ytdl-core/lib/info-extras.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ytdl-core/lib/sig.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ytdl-core/lib/util.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ytdl-core/typings/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3602" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ytdl-core/lib/info.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ytdl-core/lib/formats.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/downloader.js" />
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/ytdl-core/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json_data/sessions.json" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.15.3/core-modules/_http_outgoing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="463" column="10" selection-start-line="463" selection-start-column="10" selection-end-line="463" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json_data/users.json" />
-    <entry file="file://$PROJECT_DIR$/views/error.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/file.txt" />
-    <entry file="file://$PROJECT_DIR$/public/404.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/websocket-ESP32.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="442">
-            <caret line="26" column="140" selection-start-line="26" selection-start-column="140" selection-end-line="26" selection-end-column="140" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state width="1483" height="208" key="GridCell.Tab.0.bottom" timestamp="1576170739226">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="208" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1576170739226" />
+    <state width="1483" height="208" key="GridCell.Tab.0.center" timestamp="1576170739226">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="208" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1576170739226" />
+    <state width="1483" height="208" key="GridCell.Tab.0.left" timestamp="1576170739226">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="208" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1576170739226" />
+    <state width="1483" height="208" key="GridCell.Tab.0.right" timestamp="1576170739226">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="208" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1576170739226" />
+    <state width="1483" height="317" key="GridCell.Tab.1.bottom" timestamp="1576168020959">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="317" key="GridCell.Tab.1.bottom/0.0.1504.963@0.0.1504.963" timestamp="1576168020959" />
+    <state width="1483" height="317" key="GridCell.Tab.1.center" timestamp="1576168020959">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="317" key="GridCell.Tab.1.center/0.0.1504.963@0.0.1504.963" timestamp="1576168020959" />
+    <state width="1483" height="317" key="GridCell.Tab.1.left" timestamp="1576168020959">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="317" key="GridCell.Tab.1.left/0.0.1504.963@0.0.1504.963" timestamp="1576168020959" />
+    <state width="1483" height="317" key="GridCell.Tab.1.right" timestamp="1576168020959">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="317" key="GridCell.Tab.1.right/0.0.1504.963@0.0.1504.963" timestamp="1576168020959" />
+    <state width="1483" height="317" key="GridCell.Tab.2.bottom" timestamp="1576168020960">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="317" key="GridCell.Tab.2.bottom/0.0.1504.963@0.0.1504.963" timestamp="1576168020960" />
+    <state width="1483" height="317" key="GridCell.Tab.2.center" timestamp="1576168020960">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="317" key="GridCell.Tab.2.center/0.0.1504.963@0.0.1504.963" timestamp="1576168020960" />
+    <state width="1483" height="317" key="GridCell.Tab.2.left" timestamp="1576168020960">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="317" key="GridCell.Tab.2.left/0.0.1504.963@0.0.1504.963" timestamp="1576168020960" />
+    <state width="1483" height="317" key="GridCell.Tab.2.right" timestamp="1576168020960">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="317" key="GridCell.Tab.2.right/0.0.1504.963@0.0.1504.963" timestamp="1576168020960" />
+    <state width="1483" height="317" key="GridCell.Tab.3.bottom" timestamp="1576168020960">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="317" key="GridCell.Tab.3.bottom/0.0.1504.963@0.0.1504.963" timestamp="1576168020960" />
+    <state width="1483" height="317" key="GridCell.Tab.3.center" timestamp="1576168020960">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="317" key="GridCell.Tab.3.center/0.0.1504.963@0.0.1504.963" timestamp="1576168020960" />
+    <state width="1483" height="317" key="GridCell.Tab.3.left" timestamp="1576168020960">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="317" key="GridCell.Tab.3.left/0.0.1504.963@0.0.1504.963" timestamp="1576168020960" />
+    <state width="1483" height="317" key="GridCell.Tab.3.right" timestamp="1576168020960">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1483" height="317" key="GridCell.Tab.3.right/0.0.1504.963@0.0.1504.963" timestamp="1576168020960" />
   </component>
 </project>
