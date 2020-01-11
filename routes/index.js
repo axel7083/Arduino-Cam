@@ -42,8 +42,23 @@ wsServer.on('request', function(request) {
     }
 
     if (message.type === 'utf8' && message.utf8Data === 'Req') {
-      console.log("Sending request to ESP32..");
+      console.log("Sending Req request to ESP32..");
       arduino.sendUTF("Req");
+    }
+
+    if (message.type === 'utf8' && message.utf8Data.includes('Rot')) {
+      console.log("Sending Rot request to ESP32..");
+      arduino.sendUTF(message.utf8Data);
+    }
+
+    if (message.type === 'utf8' && message.utf8Data.includes('Led')) {
+      console.log("Sending Led request to ESP32..");
+      arduino.sendUTF(message.utf8Data);
+    }
+
+    if (message.type === 'utf8' && message.utf8Data.includes('Reb')) {
+      console.log("Sending Reb request to ESP32..");
+      arduino.sendUTF(message.utf8Data);
     }
 
     if (message.type === 'binary') {

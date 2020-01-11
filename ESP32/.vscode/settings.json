@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "random": "cpp",
+        "servomanager.h": "c"
+    }
+}
