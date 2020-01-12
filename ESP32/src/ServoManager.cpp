@@ -8,7 +8,7 @@ Servo servo1;
 void initServo()
 {
     servo1.attach(servoPin); //define the servo pin
-    servo1.write(initial_degree); //set initial degree of servo to 0
+    servo1.write(50); //set initial degree of servo to 0
 }
 
 /*Return the current degree of the servo*/

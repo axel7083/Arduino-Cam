@@ -15,7 +15,6 @@ const char* password = "eqndnrjg"; // Put your PASSWORD here
 
 void setup()
 {
-
     Serial.begin(500000);
 
     /*Init the ArduCam*/
@@ -68,9 +67,5 @@ void setup()
 
 void loop() {
   loopWebSocket();
-
-  /*if(isMovement())
-  {
-    Serial.printf("MVT DETECTED");
-  }*/
+  SensorLoop();
 }

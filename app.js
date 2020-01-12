@@ -13,7 +13,7 @@ express.static('public');
 
 
 const location_hide = require('location-hide');
-path = require('path'),
+path = require('path');
    // filePath = path.join(__dirname, 'public/html/menu.html'); // <-- FILE IMPORT HERE
 fs = require('fs');
 randomize = require('randomatic');
@@ -42,10 +42,10 @@ app.disable('x-powered-by');
 app.use('/', indexRouter);
 
 
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+  res.sendFile(path.join(__dirname+'/public/404.html'));
+  //next(createError(404));
 });
 
 // error handler with detail

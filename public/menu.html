@@ -34,7 +34,7 @@
         .container {
             margin: 40px 0;
             width: 400px;
-            height: 50%;
+            height: 65%;
             padding: 10px 25px;
             background: #0a0e31;
             border-radius: 10px;
@@ -552,10 +552,15 @@
                                                         ">settings</span>
         <div class="setting">
             <input type="checkbox" id="led_setting" checked />
-            <label for="led_setting">Setting 1</label>
+            <label for="led_setting">Led light</label>
+        </div>
+        <div class="setting">
+            <input type="checkbox" id="image_setting" checked />
+            <label for="image_setting">Capture Image on mouvement</label>
         </div>
     </div>
 
+    <button onclick="window.location.href='/table'" class="btn generate" id="table">Logs</button>
     <button class="btn generate" id="generate">REBOOT</button>
 </div>
 
@@ -586,6 +591,7 @@
     };
     connection.onmessage = function(e) {
         console.log(e.data);
+
         var blob = e.data;
         var urlCreator = window.URL || window.webkitURL;
         var imageUrl = urlCreator.createObjectURL(blob);
@@ -652,7 +658,15 @@
     });
 
 
-
+    document.getElementById("image_setting").addEventListener( 'change', function() {
+        if(this.checked) {
+            connection.send('Img 1');
+            console.log("IT'S CHECKED");
+        } else {
+            console.log("IT'S NOT CHECKED");
+            connection.send('Img 0');
+        }
+    });
 
 
 
@@ -691,7 +705,7 @@
         };
     });
 
-    // Copy Password in clipboard
+
     copyBtn.addEventListener("click", () => {
 
         send();

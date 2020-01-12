@@ -1,6 +1,8 @@
 #include <Arduino.h>
 #include <WebSocketsClient.h>
 
+void sendText(char* data);
+boolean isConnected();
 void initWebSocket();
 void loopWebSocket();
 void sendData(uint8_t* data,uint32_t length);

@@ -7,8 +7,16 @@
 #include "Output.h"
 
 static WebSocketsClient webSocket;
+static boolean connected = false;
+
+boolean isConnected()
+{
+    return connected;
+}
+
 
 void initWebSocket()
+
 {
     // server address, port and URL
 	webSocket.begin("192.168.43.94", 81, "/");
@@ -28,6 +36,11 @@ void loopWebSocket()
 void sendData(uint8_t* data,uint32_t length)
 {
     webSocket.sendBIN(data, length);
+}
+
+void sendText(char* data)
+{
+    webSocket.sendTXT(data);
 }
 
 int extract(char * value,size_t length)
@@ -50,21 +63,23 @@ void webSocketEvent(WStype_t type, uint8_t * payload, size_t length) {
         Serial.printf(">3!\n");
         payloadChar[3] = '\0';
     }
-
-	switch(type) {
+    
+    switch(type) {
 		case WStype_DISCONNECTED:
 			Serial.printf("[WSc] Disconnected!\n");
 
-      digitalWrite(ledRed, HIGH);
-      digitalWrite(ledGreen, LOW);
+            connected= false;
 
-
+            digitalWrite(ledRed, HIGH);
+            digitalWrite(ledGreen, LOW);
+      
 			break;
 		case WStype_CONNECTED:
 			Serial.printf("[WSc] Connected to url: %s\n", payload);
+            connected = true;
             
-      digitalWrite(ledRed, LOW);
-      digitalWrite(ledGreen, HIGH);
+            digitalWrite(ledRed, LOW);
+            digitalWrite(ledGreen, HIGH);
 
 			// send message to server when Connected
 			webSocket.sendTXT("ESP32");

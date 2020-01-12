@@ -34,8 +34,7 @@ void initCam()
     temp = myCAM.read_reg(ARDUCHIP_TEST1);
     if (temp != 0x55) {
         Serial.println(F("SPI1 interface Error!"));
-        while (1)
-            ;
+        ESP.restart();
     }
 
     //Check if the camera module type is OV5642
@@ -52,17 +51,17 @@ void initCam()
     myCAM.set_format(JPEG);
     myCAM.InitCAM();
     myCAM.write_reg(ARDUCHIP_TIM, VSYNC_LEVEL_MASK); //VSYNC is active HIGH
-    myCAM.OV5642_set_JPEG_size(OV5642_320x240);
+    myCAM.OV5640_set_JPEG_size(OV5642_320x240);
 
     myCAM.clear_fifo_flag();
      
-    myCAM.set_bit(ARDUCHIP_GPIO,GPIO_PWDN_MASK); //enable low power
+    //myCAM.set_bit(ARDUCHIP_GPIO,GPIO_PWDN_MASK); //enable low power
 }
 
 
 void start_capture()
 {
-    myCAM.clear_bit(ARDUCHIP_GPIO,GPIO_PWDN_MASK); //disable low power
+    //myCAM.clear_bit(ARDUCHIP_GPIO,GPIO_PWDN_MASK); //disable low power
     myCAM.clear_fifo_flag();
     myCAM.start_capture();
 }
@@ -139,11 +138,6 @@ void serverCapture()
     Serial.println(F("CAM Capture Done."));
     total_time = millis();
     camCapture(myCAM);
-
-    //send data to serial port
-    //Serial.println("[");
-    //Serial.write(&buffer[0], length);
-    //Serial.println("]");
 
     total_time = millis() - total_time;
     Serial.print(F("send total_time used (in miliseconds):"));

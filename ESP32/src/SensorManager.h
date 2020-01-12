@@ -3,3 +3,4 @@
 
 void initSensor();
 boolean isMovement();
+void SensorLoop();

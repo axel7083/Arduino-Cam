@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
+var JsonDB = require('node-json-db');
 const delay = require('delay');
 
 var WebSocketServer = require('websocket').server;
@@ -16,6 +17,8 @@ server.listen(81, function() { });
 var browser; //websocket client to browser(s)
 var arduino; //websocket client of arduino
 
+var isPic4Log = false;
+var capturePic4Log = true;
 
 // create the server
 wsServer = new WebSocketServer({
@@ -31,11 +34,29 @@ wsServer.on('request', function(request) {
   temp.on('message', function (message) {
     console.log(message);
 
+    /**Arduino functions**/
     if (message.type === 'utf8' && message.utf8Data === 'ESP32') {
-        arduino = temp;
-        console.log("ESP32 Registred");
+      arduino = temp;
+      console.log("ESP32 Registred");
     }
 
+    if (message.type === 'utf8' && message.utf8Data === 'Mvt') {  //numéro, jour heure minutes seconde et photo eventuel
+      console.log("Movement detected");
+      if(capturePic4Log) {
+        isPic4Log = true; // We are requesting a picture for the current movement detected!
+        arduino.sendUTF("Req");
+      }
+      else
+      {
+        var db = new JsonDB(__dirname + '/../json_data/logs',true,true);
+
+        db.push("/logs[]", {
+          date: Date.now()
+        },true)
+      }
+    }
+
+    /**Browser fonctions**/
     if (message.type === 'utf8' && message.utf8Data === 'BROWSER') {
       browser = temp;
       console.log("BROWSER Registred");
@@ -61,9 +82,35 @@ wsServer.on('request', function(request) {
       arduino.sendUTF(message.utf8Data);
     }
 
+    if (message.type === 'utf8' && message.utf8Data.includes('Img')) {
+      console.log("Changing Image Capture settings.");
+      if(message.utf8Data.includes('1')) //turn it on
+      {
+        capturePic4Log = true
+      }
+      else //turn it off
+      {
+        capturePic4Log = false;
+      }
+
+    }
+
+
     if (message.type === 'binary') {
-      console.log("Sending data to browser...");
-      browser.sendBytes(message.binaryData,message.binaryData.length);
+
+      if(!isPic4Log) {
+        console.log("Sending data to browser...");
+        browser.sendBytes(message.binaryData, message.binaryData.length);
+      }
+      else
+      {
+        var db = new JsonDB(__dirname + '/../json_data/logs',true,true);
+
+        db.push("/logs[]", {
+          date: Date.now(),
+          image: message.binaryData
+        },true)
+      }
     }
   });
 
@@ -74,15 +121,15 @@ wsServer.on('request', function(request) {
 
 
 router.get('/',function(req,res){
-
-  res.sendFile(path.join(__dirname+'/../public/websocket-ESP32.html'));
-
+  res.sendFile(path.join(__dirname+'/../public/menu.html'));
 });
 
-router.get('/index',function(req,res){
+router.get('/table',function(req,res){
+  res.sendFile(path.join(__dirname+'/../public/table.html'));
+});
 
-  res.sendFile(path.join(__dirname+'/../public/menu.html'));
-
+router.get('/tablejs',function(req,res){
+  res.sendFile(path.join(__dirname+'/../json_data/logs.json'));
 });
 
 router.get('/test',function(req,res){
