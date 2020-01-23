@@ -10,7 +10,7 @@
 
 //Station mode you should put your ssid and password
 const char* ssid = "Patates"; // Put your SSID here
-const char* password = "eqndnrjg"; // Put your PASSWORD here
+const char* password = "********"; // Put your PASSWORD here
 
 
 void setup()
