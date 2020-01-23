@@ -1,5 +1,8 @@
 # Arduino-Cam
 
+![Website Interface](https://github.com/axel0070/Arduino-Cam/blob/master/Screenshots/IFD2.png)
+
+
 ## Requirements
 
 * Node.js v12.8.1
