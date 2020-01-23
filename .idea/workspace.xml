@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="646b3e70-fe39-4d7c-9d33-0af471a177d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/json_data/logs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/table.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESP32/src/CamManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ESP32/src/CamManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESP32/src/SensorManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ESP32/src/SensorManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESP32/src/SensorManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/ESP32/src/SensorManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESP32/src/ServoManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ESP32/src/ServoManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESP32/src/WebSocketManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ESP32/src/WebSocketManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESP32/src/WebSocketManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/ESP32/src/WebSocketManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESP32/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ESP32/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/LICENSE-MIT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jQuery/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/grunt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/lib/node-jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jQuery/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/src/wrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/test/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/test/css.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/test/fixtures/core.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/test/fixtures/css.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/test/fixtures/css.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/test/helpers/helper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jQuery/tmp/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-json-db/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-json-db/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/websocket-ESP32.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +41,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -77,6 +50,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.16.1" />
     <property name="jsx.switch.disabled" value="true" />
@@ -231,6 +205,7 @@
       <workItem from="1578654756479" duration="1503000" />
       <workItem from="1578696006638" duration="1639000" />
       <workItem from="1578838820125" duration="7665000" />
+      <workItem from="1579793501577" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="HTML fix">
       <created>1575326606414</created>
@@ -327,5 +302,9 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1483" height="317" key="GridCell.Tab.3.right/0.0.1504.963@0.0.1504.963" timestamp="1576168020960" />
+    <state x="449" y="307" key="com.intellij.ide.util.TipDialog" timestamp="1579793511505">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="449" y="307" key="com.intellij.ide.util.TipDialog/0.0.1504.963@0.0.1504.963" timestamp="1579793511505" />
   </component>
 </project>
