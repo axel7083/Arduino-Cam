@@ -2,13 +2,18 @@
 
 ![Website Interface](https://github.com/axel0070/Arduino-Cam/blob/master/Screenshots/IFD2.png)
 
+Using an [ArduCAM](https://www.gotronic.fr/art-camera-arducam-ov5642-25252.htm) we built a simple web interface powered by NodeJS which offer to the user to controls the ArduCAM, you can launch a videostream, make a capture, detect [movement](https://boutique.semageek.com/fr/1249-detecteur-de-mouvement-pir-avec-reglages.html?search_query=PIR&results=21)...
+
+The box where the ArduCAM is contain was printed using a 3D printer, the design has been done on Fusion 360.
+
+![ArduCAM box](https://github.com/axel0070/Arduino-Cam/blob/master/Screenshots/Tower.png)
 
 ## Requirements
 
 * Node.js v12.8.1
 * Git
 * Visual Studio Code (PlatformIO installed)
-* ESP82 connected to OV5642
+* ESP32 connected to OV5642
 
 ## Node.js setup
 
